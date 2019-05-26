@@ -132,7 +132,7 @@ class overview_controller extends admin_main
 			$this->ppde_ipn_paypal->check_tls();
 			$this->ppde_actions_locale->set_intl_info();
 			$this->ppde_actions_locale->set_intl_detected();
-			$this->config->set('ppde_first_start', (string) false);
+			$this->config->set('ppde_first_start', '0');
 		}
 
 		$this->do_action($action);
